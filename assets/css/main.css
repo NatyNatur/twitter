@@ -6,7 +6,7 @@
 body {
 	margin: 0;
 	width: 100%;
-	height: 1000px;
+	height: 100%;
 	text-align: center;
 }
 
@@ -14,7 +14,8 @@ body {
 	background-image: url(../img/img6.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 1000px;
+	height: 800px;
+	background-position: fixed;
 }
 
 header {
@@ -40,17 +41,17 @@ header > h1 {
 }
 
 .profile {
-	max-width: 30%;
+	max-width: 25%;
 	text-align:center;
 	font-family: 'Open Sans', sans-serif;
 	background-color: #FFF;
 	padding: 10px;
-	font-size: 15px;
+	font-size: 14px;
 	position: fixed;
 }
 
 .profile > img {
-	max-width: 200px;
+	max-width: 150px;
 	height: auto;
 	border-radius: 10em;
 }
@@ -74,6 +75,10 @@ header > h1 {
 	margin: 10px;
 }
 
+#counter {
+	margin-left: 290px;
+}
+
 #btn {
 	background-color: #1DA1F2;
 	width: 95px;
@@ -94,7 +99,6 @@ header > h1 {
 	background-color: #FFF;
 	width:500px;
 	margin: 20px auto;
-	margin-right: 65px;
+	margin-right: 5%;
 	font-family: 'Raleway', sans-serif;
 }
-
