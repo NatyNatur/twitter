@@ -1,7 +1,7 @@
 var pressButton = document.getElementById('btn');
 var counting = document.getElementById('counter');
 var textArea = document.getElementById('tweetbox');
-var tweetLength = textArea.value.trim().length;
+// var tweetLength = textArea.value.trim().length;
 
 pressButton.addEventListener('click', function (){
 	//tenemos que tomar el texto ingresado en el textarea
@@ -26,20 +26,23 @@ pressButton.addEventListener('click', function (){
 });
 
 
-textArea.onkeydown = function() {
+textArea.onkeyup = function() {
 		//iniciando contador
 		counting.innerHTML = '<span>140</span>';
 		// recojo valor del textArea
 		tweetArea = textArea.value;
 		// contador de carácteres
-		var tweetLong = tweetArea.length;
-		// console.log(tweetLong);
+		var tweetLength = tweetArea.length;
+		// console.log(tweetLength);
 		// voy restando
-		var restando = 139 - tweetLong;
-		// console.log(restando);
+		var tweetLong = 140 - (tweetLength);
+		// console.log(tweetLong);
 		// dándole el valor al contador
-		counting.innerHTML = '<span>' + restando + '</span>';
+		counting.innerHTML = '<span>' + tweetLong + '</span>';
 
+		if(tweetLong < 60) {
+			counting.setAttribute('class', 'redText');
+		}
 	};
 
 
