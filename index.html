@@ -4,33 +4,42 @@
 	<meta charset="UTF-8">
 	<title>Twitter</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-	<div id="imgbkgr">
 		<header>
-			<h1>Twitter</h1>
-			</header>
-		<!-- sección profile, twitter, botón -->
-		<section class="container">
-			<div class="profile">
-				<img src="assets/img/profile.jpg" alt="NatyNatur">
-				<h4>@NatyNatur</h4>
-				<p>24, Virgo. Coder in progress at <a href="https://twitter.com/LaboratoriaLA">@LaboratoriaLA</a> <br> En mi tiempo libre me dedico a comer miel y salvar a los ositos. #TeamCap</p>
+			<div class="col-xs-12">
+				<h1>Twitter</h1>
 			</div>
-			<div class="tweeting">
-				<textarea name="tweet" id="tweetbox" placeholder="¿Qué estás pensando?"></textarea> <br>
-				<span id="counter"></span>
-				<button type="button" id="btn">Twittear</button>
+		</header>
+		<!-- sección profile, twitter, botón -->
+		<section class="row appCont">
+			<div class="col-sm-push-2 col-sm-8 col-md-push-1 col-md-3">
+				<div class="profile">
+					<img src="assets/img/profile.jpg" alt="NatyNatur">
+					<h4>@NatyNatur</h4>
+					<p>24, Virgo. Coder in progress at <a href="https://twitter.com/LaboratoriaLA">@LaboratoriaLA</a> <br> En mi tiempo libre me dedico a comer miel y salvar a los ositos. #TeamCap</p>
+				</div>
+			</div>
+			<div class="col-sm-push-2 col-sm-8 col-md-push-3 col-md-4">
+				<div class="tweeting">
+					<textarea name="tweet" id="tweetbox" placeholder="¿Qué estás pensando?"></textarea> <br>
+					<span id="counter"></span>
+					<button type="button" id="btn">Twittear</button>
+				</div>
+				<!-- contenedor de tweets-->
+				<div id="tweet-cont" class="col-sm-12 col-md-4"></div>
 			</div>
 		</section>
-		<!-- contenedor de tweets-->
-			<div id="tweet-cont"></div>
-		<section>
-			
-		</section>		
-	</div>
+
 	<!-- script file -->
+	<script src="assets/js/jquery.min.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> -->
+	<script src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>

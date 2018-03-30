@@ -6,48 +6,44 @@
 body {
 	margin: 0;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	text-align: center;
+	background-color: #DADACE;
 }
 
 #imgbkgr {
 	background-image: url(../img/img6.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 800px;
-	background-position: fixed;
+	height: 100vh;
+	margin: 0;
 }
 
 header {
 	width: 100%;
-	height: 50px;
+	height: 5em;
 	text-align: center;
 	font-family: 'Inconsolata', monospace;
 	background: #1DA1F2;
 	color: #FFF;
-	margin: 0px 0px 15px;
-	position: fixed;
 }
 
 header > h1 {
 	margin: 0px;
 }
 
-.container {
-	display: inline-flex;
-	width: 90%;
-	margin: 0 20px 30px;
-	margin-top: 70px;
+.appCont {
+	padding-top: 2em;
 }
 
 .profile {
-	max-width: 25%;
 	text-align:center;
 	font-family: 'Open Sans', sans-serif;
 	background-color: #FFF;
-	padding: 10px;
-	font-size: 14px;
-	position: fixed;
+	padding: 1em;
+	font-size: 1em;
+	margin-bottom: 2em;
+	border-radius: 1em 5em;
 }
 
 .profile > img {
@@ -62,43 +58,54 @@ header > h1 {
 }
 
 .tweeting {
-	min-width: 500px;
-	min-height: 155px;
+	width: 100%;
+	min-height: 13em;
 	font-family: 'Raleway', sans-serif;
 	background-color: #FFF;
-	margin-left: auto;
+	border-radius: 1em;
 }
 
 #tweetbox {
-	min-width: 450px;
-	min-height: 100px;
-	margin: 10px;
+	width: 90%;
+	min-height: 7em;
+	margin: 1.5em 0 1em;
 }
 
 #counter {
-	margin-left: 290px;
+	margin-right: -10em;
 }
 
 #btn {
 	background-color: #1DA1F2;
-	width: 95px;
-	height: 25px;
+	width: 8em;
+	height: 2.5em;
 	color: #FFF;
-	border-radius: 2em;
+	border-radius: 1em;
 	float: right;
-    margin-right: 10px;
-    outline: none;
-    margin-bottom: 2px;
-    font-family: 'Raleway', sans-serif;
+  margin-right: 1em;
+  outline: none;
+  margin-bottom: 2px;
+  font-family: 'Raleway', sans-serif;
+}
+
+#tweet-cont {
+	margin-top: 1em;
+	width: 111%;
+	margin-left: -1em;
 }
 
 #tweet-cont > div {
 	padding: 1em 0.5em;
 	margin-bottom: 2em;
-	outline: 0.1em solid #E5E3F2;
 	background-color: #FFF;
-	width:500px;
 	margin: 20px auto;
 	margin-right: 5%;
 	font-family: 'Raleway', sans-serif;
+	border-radius: 1em;
+}
+
+@media (max-width: 992px) {
+	p {
+		font-size: 2.4em;
+	}
 }
